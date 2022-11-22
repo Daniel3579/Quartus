@@ -1,0 +1,39 @@
+|labthirdfirst
+P <= adder:inst2.P
+Z => adder:inst1.Z
+K => adder:inst1.K
+K => adder:inst2.K
+A => adder:inst1.A
+B => adder:inst1.B
+A1 => adder:inst2.A
+B1 => adder:inst2.B
+S1 <= adder:inst2.S
+S <= adder:inst1.S
+
+
+|labthirdfirst|adder:inst2
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Z => inst4.IN0
+Z => inst5.IN0
+A => inst2.IN0
+A => inst1.IN0
+B => inst2.IN1
+B => inst6.IN0
+P <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+K => inst1.IN1
+K => inst3.IN1
+
+
+|labthirdfirst|adder:inst1
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Z => inst4.IN0
+Z => inst5.IN0
+A => inst2.IN0
+A => inst1.IN0
+B => inst2.IN1
+B => inst6.IN0
+P <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+K => inst1.IN1
+K => inst3.IN1
+
+

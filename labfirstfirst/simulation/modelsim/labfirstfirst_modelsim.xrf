@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/13.1/labfirstfirst.bdf
+source_file = 1, C:/altera/13.1/db/labfirstfirst.cbx.xml
+design_name = labfirstfirst
+instance = comp, \Y~output\, Y~output, labfirstfirst, 1
+instance = comp, \C~input\, C~input, labfirstfirst, 1
+instance = comp, \B~input\, B~input, labfirstfirst, 1
+instance = comp, \D~input\, D~input, labfirstfirst, 1
+instance = comp, \A~input\, A~input, labfirstfirst, 1
+instance = comp, \inst7~0\, inst7~0, labfirstfirst, 1

@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/labthirdsecond/Waveform.vwf
+source_file = 1, C:/altera/labthirdsecond/labthirdsecond.bdf
+source_file = 1, C:/altera/labthirdsecond/db/labthirdsecond.cbx.xml
+design_name = labthirdsecond
+instance = comp, \S1~output , S1~output, labthirdsecond, 1
+instance = comp, \S2~output , S2~output, labthirdsecond, 1
+instance = comp, \P~output , P~output, labthirdsecond, 1
+instance = comp, \A~input , A~input, labthirdsecond, 1
+instance = comp, \B~input , B~input, labthirdsecond, 1
+instance = comp, \Z~input , Z~input, labthirdsecond, 1
+instance = comp, \A1~input , A1~input, labthirdsecond, 1
+instance = comp, \B1~input , B1~input, labthirdsecond, 1
+instance = comp, \K~input , K~input, labthirdsecond, 1

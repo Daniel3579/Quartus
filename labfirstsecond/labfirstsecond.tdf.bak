@@ -1,0 +1,8 @@
+SUBDESING 'labfirstsecond'
+(
+a, d, b, c :INPUT;
+y :OUTPUT;
+)
+BEGIN
+y = (a + d) & (b & c) + !(a + d) & !(b & c);
+END;

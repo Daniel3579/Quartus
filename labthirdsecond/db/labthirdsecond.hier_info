@@ -1,0 +1,20 @@
+|labthirdsecond
+S1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst1.IN0
+B => inst2.IN1
+B => inst6.IN1
+Z => inst4.IN1
+Z => inst5.IN1
+S2 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst9.IN0
+A1 => inst8.IN0
+B1 => inst9.IN1
+B1 => inst13.IN1
+K => inst1.IN1
+K => inst3.IN1
+K => inst8.IN1
+K => inst10.IN1
+P <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+
+
