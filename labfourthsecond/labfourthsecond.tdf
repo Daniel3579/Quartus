@@ -1,0 +1,40 @@
+SUBDESIGN 'labfourthsecond'
+(
+clock, a, b :INPUT;
+q[3..0] :OUTPUT;
+)
+
+VARIABLE
+st[15..0],r[5..0]:NODE;
+
+BEGIN
+st0 = !q3 & !q2 & !q1 & !q0;
+st1 = !q3 & !q2 & !q1 & q0;
+st2 = !q3 & !q2 & q1 & !q0;
+st3 = !q3 & !q2 & q1 & q0;
+st4 = !q3 & q2 & !q1 & !q0;
+st5 = !q3 & q2 & !q1 & q0;
+st6 = !q3 & q2 & q1 & !q0;
+st7 = !q3 & q2 & q1 & q0;
+st8 = q3 & !q2 & !q1 & !q0;
+st9 = q3 & !q2 & !q1 & q0;
+st10 = q3 & !q2 & q1 & !q0;
+st11 = q3 & !q2 & q1 & q0;
+st12 = q3 & q2 & !q1 & !q0;
+st13 = q3 & q2 & !q1 & q0;
+st14 = q3 & q2 & q1 & !q0;
+st15 = q3 & q2 & q1 & q0;
+
+r0 = !a & st12;
+r1 = a & st12;
+r2 = !b & st13;
+r3 = b & st13;
+r4 = !b & st9;
+r5 = b & st9;
+
+q0 = DFF(r1 # st4 # r2 # st15 # st7 # st0 # st3 # st1 # st8 # st10,clock,,);
+q1 = DFF(r0 # r2 # r3 # st15 # st0 # st3 # r4 # r5 # st8 # st10,clock,,);
+q2 = DFF(st11 # r0 # st6 # st4 # r2 # st15 # st7 # r5 # st8 # st10,clock,,);
+q3 = DFF(st11 # st4 # r2 # r3 # st3 # st1 # r5 # st2 # st14,clock,,);
+
+END;

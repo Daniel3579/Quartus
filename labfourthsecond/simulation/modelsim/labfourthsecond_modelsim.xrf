@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/labfourthsecond/labfourthsecond.tdf
+source_file = 1, C:/altera/labfourthsecond/db/labfourthsecond.cbx.xml
+design_name = labfourthsecond
+instance = comp, \q[0]~output\, q[0]~output, labfourthsecond, 1
+instance = comp, \q[1]~output\, q[1]~output, labfourthsecond, 1
+instance = comp, \q[2]~output\, q[2]~output, labfourthsecond, 1
+instance = comp, \q[3]~output\, q[3]~output, labfourthsecond, 1
+instance = comp, \clock~input\, clock~input, labfourthsecond, 1
+instance = comp, \a~input\, a~input, labfourthsecond, 1
+instance = comp, \b~input\, b~input, labfourthsecond, 1
